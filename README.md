@@ -1,5 +1,5 @@
 # AMRprediction_HomologyModeling_Docking
-Using Machine learning framework to predict putative novel AMR genes and molecular docking studies to study interaction between antibiotics
+Using Machine learning framework to predict putative novel AMR genes and molecular docking studies to study interaction between respective antibiotics in various bacterial species.
 
 The framework takes all the annotated genes and genomic features and AST data as labels to construct a binary matrix. The frameworks then prioritize the most important genes potentially responsible for respective antibiotic resistance by building models for All set, Intersection set, and Random set.
 
