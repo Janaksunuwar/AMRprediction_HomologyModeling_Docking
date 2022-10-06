@@ -18,17 +18,17 @@ All the python .py files are in the Codes folder that can be downloaded to local
 
 First of all ML_run.py file should be ran in local terminal as following. This will create a function Ml_run() of ML models for All set, Intersection Set and Random Set to produce figures of assessment of training, validation and test settings.
 
-_(base) @user$: python Ml_run.py 
+**_(base) @user$: python Ml_run.py **
 
 Then, run the respective .py files of each bacteria to get  to get individual ML performance outputs of all three sets. These outputs would be named separately and output would be in the same working directory/path
 
 eg: To run ML models for all three sets for Klebsiella
 
-_(base) @user$: python Klebsiella_Run.py
+**_(base) @user$: python Klebsiella_Run.py**
 
 To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongst all three sets.
 
-_(base) @user$: python Plot_F1.py
+**_(base) @user$: python Plot_F1.py**
 
 Similary, other .py files can be run subsequently and recommended to follow the jupyter-notebook steps and docstrings as necessary instructions and documentation.
 
