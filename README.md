@@ -8,11 +8,17 @@ Further, an automated commandline molecular docking is performed by downloading 
 The PDB models of receptors are prepared by removing heteroatoms, reparing hydorgens, and adding Kollman/Gasteiger charges as described in AutoDock. The SDF structure of the respective antiboitics are downloaded from PubChem and converted to PDB format with OpenBabel. The PDB ligands is prepared via command line Autodock ligand preparation. Then the homology modeled receptors (predicted protein) and ligands(antiboitics) binding free-energy affinity score (Kcal/mol) is calculated with AutoDock Vina Smina fork. 
 
 # How to run
-1. All the necessary files and .py files should be in the same directory and the terminal should indicate the same working directoy/path 
-2. Necessary Files: eg: Final_Gene_AST_matrix_Klebsiella_Doripenem_qc70_pi30.csv (This is a binary matrix of presence/absence genes for Klebsiella, antibiotic(Doripenem)
-3. All the python .py files are in the Codes folder that can be downloaded to local folder/can be user created
-4. First of all ML_run.py file should be ran in local terminal as following. This will create a function Ml_run() that will create ML models for All set, Intersection Set and Random Set to produce figures of assessment of training, validation and test settings.
-5. 
-6. (base) @user: python Ml_run.py 
-7. 
-8
+All the necessary files and .py files should be in the same directory and the terminal should indicate the same working directoy/path
+
+Necessary Files: eg: Final_Gene_AST_matrix_Klebsiella_Doripenem_qc70_pi30.csv, which is a binary matrix of presence/absence genes for Klebsiella, antibiotic(Doripenem)
+
+All the python .py files are in the Codes folder that can be downloaded to local working directory/can be user created
+
+First of all ML_run.py file should be ran in local terminal as following. This will create a function Ml_run() that will create ML models for All set, Intersection Set and Random Set to produce figures of assessment of training, validation and test settings.
+
+(base) @user$: python Ml_run.py 
+
+Then, run the respective .py files of each bacteria to get  to get individual ML performance outputs of all three sets. These outputs would be named separately in the same directory.
+
+(base) @user$: python Klebsiella_Run.py
+
