@@ -7,7 +7,7 @@ Further, an automated commandline molecular docking is performed by downloading 
 
 The PDB models of receptors are prepared by removing heteroatoms, reparing hydorgens, and adding Kollman/Gasteiger charges as described in AutoDock. The SDF structure of the respective antiboitics are downloaded from PubChem and converted to PDB format with OpenBabel. The PDB ligands is prepared via command line Autodock ligand preparation. Then the homology modeled receptors (predicted protein) and ligands(antiboitics) binding free-energy affinity score (Kcal/mol) is calculated with AutoDock Vina Smina fork. 
 
-#How to run codes
+# How to run codes
 1. All the necessary files and .py files should be in the same folder
 2. Necessary Files: eg: Final_Gene_AST_matrix_Klebsiella_Doripenem_qc70_pi30.csv (This is a binary matrix of presence/absence genes for Klebsiella, antibiotic(Doripenem)
 3. 
