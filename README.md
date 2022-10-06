@@ -28,4 +28,15 @@ To plot the F1 score comparision, run Plot_F1.py as following. This will output 
 
 (base) @user$: python Plot_F1.py
 
+Similary, other .py files can be run subsequently and recommended to follow the jupyter-notebook steps and docstrings as necessary instructions and documentation.
+
+# Note
+
+The release version of programs associated might opt for certain dependencies and results might be dependendent on it as general. 
+Sklearn Version 0.21.3¶
+MODELLER 10.1
+AutoDock Vina v1.1.2
+OpenBabel v2.3.1
+
+
 
