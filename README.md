@@ -21,9 +21,11 @@ First of all ML_run.py file should be ran in local terminal as following. This w
 Then, run the respective .py files of each bacteria to get  to get individual ML performance outputs of all three sets. These outputs would be named separately and output would be in the same working directory/path
 
 eg: To run ML models for all three sets for Klebsiella
+
 (base) @user$: python Klebsiella_Run.py
 
 To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongs all three sets.
+
 (base) @user$: python Plot_F1.py
 
 
