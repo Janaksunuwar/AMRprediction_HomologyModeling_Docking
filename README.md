@@ -10,7 +10,7 @@ The PDB models of receptors are prepared by removing heteroatoms, reparing hydor
 # How to run
 All the necessary files and .py files should be in the same directory and the terminal should indicate the same working directoy/path
 
-Necessary Files: eg: Final_Gene_AST_matrix_Klebsiella_Doripenem_qc70_pi30.csv, which is a binary matrix of presence/absence genes for Klebsiella, antibiotic(Doripenem)
+Necessary files are the binary matrix, .py files required for ML run, Homology Modeling and Docking. eg. Final_Gene_AST_matrix_Klebsiella_Doripenem_qc70_pi30.csv, which is a binary matrix of presence/absence genes for Klebsiella, antibiotic(Doripenem)
 
 All the python .py files are in the Codes folder that can be downloaded to local working directory/can be user created
 
@@ -18,7 +18,12 @@ First of all ML_run.py file should be ran in local terminal as following. This w
 
 (base) @user$: python Ml_run.py 
 
-Then, run the respective .py files of each bacteria to get  to get individual ML performance outputs of all three sets. These outputs would be named separately in the same directory.
+Then, run the respective .py files of each bacteria to get  to get individual ML performance outputs of all three sets. These outputs would be named separately and output would be in the same working directory/path
 
+eg: To run ML models for all three sets for Klebsiella
 (base) @user$: python Klebsiella_Run.py
+
+To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongs all three sets.
+(base) @user$: python Plot_F1.py
+
 
