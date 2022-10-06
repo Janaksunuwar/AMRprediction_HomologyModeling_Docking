@@ -33,10 +33,9 @@ Similary, other .py files can be run subsequently and recommended to follow the 
 # Note
 
 The release version of programs associated might opt for certain dependencies and results might be dependendent on it as general. 
-Sklearn Version 0.21.3¶
+Sklearn Version 0.21.3
 MODELLER 10.1
 AutoDock Vina v1.1.2
 OpenBabel v2.3.1
-
-
-
+UCSF Chimera v1.15
+DiscoverStudioVisualizer v21.1.0.20298
