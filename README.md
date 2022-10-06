@@ -14,7 +14,7 @@ Necessary files are the binary matrix, .py files required for ML run, Homology M
 
 All the python .py files are in the Codes folder that can be downloaded to local working directory/can be user created
 
-First of all ML_run.py file should be ran in local terminal as following. This will create a function Ml_run() that will create ML models for All set, Intersection Set and Random Set to produce figures of assessment of training, validation and test settings.
+First of all ML_run.py file should be ran in local terminal as following. This will create a function Ml_run() of ML models for All set, Intersection Set and Random Set to produce figures of assessment of training, validation and test settings.
 
 (base) @user$: python Ml_run.py 
 
