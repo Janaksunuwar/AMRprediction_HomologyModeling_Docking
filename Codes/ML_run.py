@@ -1,3 +1,5 @@
+#All set, Intersection set and Random set performance with comparision plot
+
 def ML_Run():
     import warnings
     warnings.filterwarnings('ignore')
@@ -54,7 +56,7 @@ def ML_Run():
     Model_Predict = pd.DataFrame(columns=[])
 
     #Split data into 6 equal parts
-    skf = StratifiedKFold(n_splits=validation_no, shuffle=True, random_state=42)
+    skf = StratifiedKFold(n_splits=validation_no, random_state=42)
     i = 0
     for train_index, test_index in skf.split(X, Y):
         X_train, X_test = X.iloc[train_index], X.iloc[test_index]
@@ -89,7 +91,7 @@ def ML_Run():
         #Ten-fold cross validation
         myDF3 = pd.DataFrame(columns=[])
         for name, model in models:
-            kfold = model_selection.KFold(n_splits=10)
+            kfold = model_selection.KFold(n_splits=10, random_state=42)
             results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold)
             mean= results.mean().round(3)
             std = results.std()
@@ -230,7 +232,7 @@ def ML_Run():
     Output = pd.DataFrame()
     
     #Split the data
-    skf = StratifiedKFold(n_splits=validation_no, shuffle=True, random_state=42)
+    skf = StratifiedKFold(n_splits=validation_no, random_state=42)
     j = 0
     
     for train_index, test_index in skf.split(X, Y):
@@ -349,7 +351,7 @@ def ML_Run():
     Model_Predict = pd.DataFrame(columns=[])
     
     #Split data into 6 equal parts
-    skf = StratifiedKFold(n_splits=validation_no, shuffle=True, random_state=42)
+    skf = StratifiedKFold(n_splits=validation_no, random_state=42)
     i = 0
     for train_index, test_index in skf.split(X, Y):
         X_train, X_test = X.iloc[train_index], X.iloc[test_index]
@@ -396,7 +398,7 @@ def ML_Run():
         #Ten-fold cross validation
         myDF3 = pd.DataFrame(columns=[])
         for name, model in models:
-            kfold = model_selection.KFold(n_splits=10)
+            kfold = model_selection.KFold(n_splits=10, random_state=42)
             results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold)
             mean = results.mean().round(3)
             std = results.std()
@@ -559,7 +561,7 @@ def ML_Run():
         Area_Under_ROC = pd.DataFrame(columns=[])
         Area_Under_Precision_Recall = pd.DataFrame(columns=[])
         Model_Predict = pd.DataFrame(columns=[])
-        skf = StratifiedKFold(n_splits=validation_no, shuffle=True, random_state=42)
+        skf = StratifiedKFold(n_splits=validation_no, random_state=42)
         ij = 0
     
         #Split the data
@@ -879,7 +881,7 @@ def ML_Run():
     Au_PR_yerror = extract_stdev('au_PR_stdev_as', 'au_PR_stdev_is','au_PR_stdev_rs')[1]
 
     my_labels=['All Set', 'Intersection Set', 'Random Set']
-    rc('text', usetex=False)
+    rc('text', usetex=True)
     fig, axes = plt.subplots(nrows=3, ncols=3, sharex=False, sharey=False, figsize=(15,10))
 
     plt.xlabel("")
@@ -970,7 +972,7 @@ def ML_Run():
 
     plt.figtext(0.5, 0.03, fig_txt, horizontalalignment='center',
                 fontsize=10, multialignment='left')
-#     fig.tight_layout()
+    fig.tight_layout()
 
     plt.subplots_adjust(top=0.97, bottom=0.15, hspace=0.29, wspace=0.1 )
     fig.savefig(f'ML_Plot_{bacteria}_{antb}_{validation_no}-fold_CV.tiff', dpi=300, format="tiff", pil_kwargs={"compression": "tiff_lzw"})
