@@ -24,7 +24,7 @@ eg: To run ML models for all three sets for Klebsiella
 
 (base) @user$: python Klebsiella_Run.py
 
-To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongs all three sets.
+To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongst all three sets.
 
 (base) @user$: python Plot_F1.py
 
