@@ -30,6 +30,7 @@ For the user-defined matrix as input, the file name and location should be modif
 
 eg:
 #Import gene-ast data from github repository
+
 file_name = f'https://github.com/Janaksunuwar/AMRprediction_HomologyModeling_Docking/raw/main/Data/Final_Gene_AST_matrix_{bacteria}_{antb}_qc70_pi30.csv'
 
 file_name = 'user/defined/file/that/contains/binary/matrix'
