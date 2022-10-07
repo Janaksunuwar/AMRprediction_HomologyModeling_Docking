@@ -26,6 +26,14 @@ eg: To run ML models for all three sets for Klebsiella
 
 (base) @user$: python Klebsiella_Run.py
 
+For the user-defined matrix as input, the file name and location should be modified. In the example provided, instead of accessing file from github, user-defined file and location can be modified in script (Klebsiella_Run.py).
+
+eg:
+#Import gene-ast data from github repository
+file_name = f'https://github.com/Janaksunuwar/AMRprediction_HomologyModeling_Docking/raw/main/Data/Final_Gene_AST_matrix_{bacteria}_{antb}_qc70_pi30.csv'
+
+file_name = 'user/defined/file/that/contains/binary/matrix'
+
 To plot the F1 score comparision, run Plot_F1.py as following. This will output the F1 scores compared amongst all three sets.
 
 (base) @user$: python Plot_F1.py
