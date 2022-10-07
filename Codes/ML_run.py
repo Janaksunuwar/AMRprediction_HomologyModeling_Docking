@@ -700,11 +700,11 @@ def ML_Run():
         Tf_CV_Avg = Tf_CV_Avg.rename(f'Tf_CV_Avg_{k}', inplace=True)
     
         #Area_Under_ROC average
-        au_ROC_avg_rs = Area_Under_ROC[Area_Under_ROC.columns[0::2]].mean(axis=1).round(3)
+        au_ROC_avg_rs = Area_Under_ROC[Area_Under_ROC.columns[1::2]].mean(axis=1).round(3)
         au_ROC_avg_rs = au_ROC_avg_rs.rename(f'au_ROC_avg_{k}', inplace=True)
     
         #Area_Under_Precision_Recall average
-        au_PR_avg_rs = Area_Under_Precision_Recall[Area_Under_Precision_Recall.columns[0::2]].mean(axis=1).round(3)
+        au_PR_avg_rs = Area_Under_Precision_Recall[Area_Under_Precision_Recall.columns[1::2]].mean(axis=1).round(3)
         au_PR_avg_rs = au_PR_avg_rs.rename(f'au_PR_avg_{k}', inplace=True)
     
         #Concatenate results
