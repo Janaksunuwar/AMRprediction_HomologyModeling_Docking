@@ -26,7 +26,7 @@ eg: To run ML models for all three sets for Klebsiella
 
 (base) @user$: python Klebsiella_Run.py
 
-For the user-defined matrix as input, the file name and location should be modified. In the example provided, instead of accessing file from github, user-defined file and location can be modified in script (Klebsiella_Run.py).
+For the user-defined matrix as input, the file name and location should be modified. In the example provided, instead of accessing file from github, user-defined file and location can be modified in the script (Klebsiella_Run.py).
 
 eg:
 #Import gene-ast data from github repository
