@@ -4,7 +4,7 @@
 
 This repository contains codes and jupyter-notebook underlying the publication
 
-Identification of Novel Antimicrobial Resistance GenesUsing Machine Learning, Homology Modeling, and Molecular Docking, 
+Identification of Novel Antimicrobial Resistance Genes Using Machine Learning, Homology Modeling, and Molecular Docking, 
 Journal: Microorganisms, Volume 10, Issue 11, 10.3390/microorganisms10112102, Published: 23 October 2022
 
 
