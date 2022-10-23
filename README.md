@@ -1,6 +1,13 @@
 # AMRprediction_HomologyModeling_Docking
 
 # Description
+
+This repository contains codes and jupyter-notebook underlying the publication
+
+Identification of Novel Antimicrobial Resistance GenesUsing Machine Learning, Homology Modeling, and Molecular Docking, 
+Journal: Microorganisms, Volume 10, Issue 11, 10.3390/microorganisms10112102, Published: 23 October 2022
+
+
 Using Machine learning framework to predict putative novel AMR genes and molecular docking studies to study interaction between respective antibiotics in various bacterial species.
 
 The framework takes all the annotated genes and genomic features and AST data as labels to construct a binary matrix. The frameworks then prioritize the most important genes potentially responsible for respective antibiotic resistance by building models for All set, Intersection set, and Random set.
