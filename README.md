@@ -7,6 +7,7 @@ This repository contains codes and jupyter-notebook underlying the publication
 Identification of Novel Antimicrobial Resistance Genes Using Machine Learning, Homology Modeling, and Molecular Docking, 
 Journal: Microorganisms, Volume 10, Issue 11, 10.3390/microorganisms10112102, Published: 23 October 2022
 
+# Brief Overview
 
 Using Machine learning framework to predict putative novel AMR genes and molecular docking studies to study interaction between respective antibiotics in various bacterial species.
 
