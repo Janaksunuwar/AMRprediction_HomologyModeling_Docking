@@ -1,4 +1,4 @@
-# AMRprediction_HomologyModeling_Docking
+# AMR_Prediction_Homology_Modeling_Molecular_Docking
 
 # Description
 
